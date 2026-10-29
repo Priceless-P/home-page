@@ -34,9 +34,9 @@ export default function BuiltForEvery() {
             <Button
               variant="tertiary"
               size="default"
-              href={LINKS.institutions}
+              href={LINKS.apiDocs}
               link
-              label="Mining at institutional scale? Talk to us"
+              label="See API documentation"
             />
           </div>
         </div>

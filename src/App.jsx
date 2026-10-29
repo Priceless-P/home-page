@@ -19,7 +19,7 @@ export default function App() {
   return (
     <>
       <header className="sticky top-0 z-50 bg-bg-default pt-6 lg:pt-0">
-        <Nav />
+        <Nav current="home" />
       </header>
 
       <main>

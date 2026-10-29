@@ -9,13 +9,14 @@ export const BLOG_HOST = 'https://blog.dmnd.work';
 
 export const LINKS = {
   home: '/',
-  slice: anchor(SECTION_IDS.slice),
-  blog: anchor(SECTION_IDS.blog),
+  slice: '/slice',
+  blog: `/${anchor(SECTION_IDS.blog)}`,
+  apiDocs: '/api',
 
   startMining: 'https://dashboard.dmnd.work',
   signIn: 'https://dashboard.dmnd.work',
   blogIndex: `${BLOG_HOST}/`,
-  trustCenter: 'https://app.eu.vanta.com/dmnd.work/trust/4u48n4nf8yiwi9swpqjsf',
+  trustCenter: 'https://www.dmnd.work/trust-center/index.html',
   transparency: 'https://transparency.dmnd.work',
 
   brokerSignup: 'https://dashboard.dmnd.work/broker',
@@ -30,7 +31,9 @@ export const LINKS = {
 
   linkedin: 'https://www.linkedin.com/company/dmndpool',
   x: 'https://x.com/DMND_Sv2',
-  sliceDeepDive: 'https://dmnd.work/slice.html',
+  sliceDeepDive: '/slice',
+  sliceExplainer: `${BLOG_HOST}/understanding-slice-pplns-jd/`,
+  sliceWhitepaper: 'https://www.dmnd.work/pplns-with-job-declaration/pplns-with-job-declaration.pdf',
   terms: 'https://dmnd.work/termsofservice.html',
   privacy: 'https://dmnd.work/privacypolicy.html',
 };
