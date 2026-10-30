@@ -12,6 +12,7 @@ const LINK_ITEMS = [
   { id: 'home', label: 'Home', href: LINKS.home },
   { id: 'slice', label: 'Slice', href: LINKS.slice },
   { id: 'api', label: 'API Docs', href: LINKS.apiDocs },
+  { id: 'trust-center', label: 'Trust Center', href: LINKS.trustCenter },
   { id: 'blog', label: 'Blog', href: LINKS.blog },
 ];
 
