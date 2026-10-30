@@ -4,7 +4,7 @@ import { imagetools } from 'vite-imagetools'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/home-page/',
+  base: '/',
   plugins: [react(), tailwindcss(), imagetools()],
   server: { port: 5177 },
   preview: { port: 5177 },

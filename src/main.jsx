@@ -8,7 +8,7 @@ import SliceDocs from './SliceDocs.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename="/home-page">
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/api" element={<ApiDocs />} />
