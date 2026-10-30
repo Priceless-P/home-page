@@ -9,11 +9,11 @@ import heroMobileAvif from '../assets/art-hero-warehouse-mobile.png?format=avif&
 import heroMobileWebp from '../assets/art-hero-warehouse-mobile.png?format=webp&quality=65&as=url';
 
 import ctaImg from '../assets/art-cta-texture.png?as=img';
-import ctaAvif from '../assets/art-cta-texture.png?format=avif&quality=35&as=url';
+import ctaAvif from '../assets/art-cta-texture.avif';
 import ctaWebp from '../assets/art-cta-texture.png?format=webp&quality=65&as=url';
 
 import ctaMobileImg from '../assets/art-cta-texture-mobile.png?as=img';
-import ctaMobileAvif from '../assets/art-cta-texture-mobile.png?format=avif&quality=35&as=url';
+import ctaMobileAvif from '../assets/art-cta-texture-mobile.avif';
 import ctaMobileWebp from '../assets/art-cta-texture-mobile.png?format=webp&quality=65&as=url';
 
 import shotImg from '../assets/dashboard-screenshot.png?as=img';
@@ -33,7 +33,7 @@ import aerialAvif from '../assets/art-aerial-map.png?format=avif&quality=35&as=u
 import aerialWebp from '../assets/art-aerial-map.png?format=webp&quality=65&as=url';
 
 import rackImg from '../assets/art-server-rack.png?as=img';
-import rackAvif from '../assets/art-server-rack.png?format=avif&quality=35&as=url';
+import rackAvif from '../assets/art-server-rack.avif';
 import rackWebp from '../assets/art-server-rack.png?format=webp&quality=65&as=url';
 
 import chevronImg from '../assets/art-efficiency-chevron.png?as=img';

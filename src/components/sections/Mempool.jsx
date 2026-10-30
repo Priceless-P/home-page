@@ -23,7 +23,7 @@ const CAPABILITIES = [
     title: 'Mempool acceleration',
     body: [
       'You build the block, so you pick what goes in it. Move any valid transaction to the front of the queue on your own node.',
-      'Turn control of your block template into a service. Favor an eligible transaction in the template your own node builds; for fee recovery, private inclusion, or a paid inclusion workflow.',
+      'Turn control of your block template into a service. Favor an eligible transaction in the template your own node builds.',
     ],
     href: LINKS.postTransactionPriority,
     tone: 'light',

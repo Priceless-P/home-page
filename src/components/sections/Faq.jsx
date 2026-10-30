@@ -5,22 +5,22 @@ import { cx } from '../../lib/cx.js';
 const ITEMS = [
   {
     q: 'Can my current machines connect?',
-    a: "Yes. Standard SV1 firmware connects through DMND's translation layer — no firmware changes required. Native SV2 firmware unlocks the full feature set. ",
+    a: "Yes. Standard SV1 firmware works with DMND's client — no firmware changes required. ",
     open: true,
   },
   {
-    q: 'Do I need to run a node?',
-    a: 'Only to build your own block templates. Job declaration runs against your node, which is what moves template choice from the pool to you. Without one you still connect over encrypted Stratum V2 and are still paid under SLICE.',
+    q: 'Can I build my own block templates?',
+    a: 'Yes, with the self-hosted DMND client (https://github.com/dmnd-pool/dmnd-client) and your own Bitcoin node. This is PPLNS only.',
     open: false,
   },
   {
     q: 'How do payouts work?',
-    a: 'Under SLICE. Every valid share is logged and assigned to your miner profile, and when DMND finds a block the reward is split by share contribution — verifiable on-chain rather than asserted by a dashboard. FPPS is available if you would rather take a fixed payout per share.',
+    a: 'Under PPLNS Payouts happen when a block is found. You can\'t know in advance exactly what each share will pay, but DMND provides a projection, and the system is designed so miners always get their fair share, including fees. The cumulative PPLNS view is at https://platform.dmnd.work/pplns-projection and shows date, hashrate and sats generated per day. More background: https://blog.dmnd.work/understanding-slice-pplns-jd/. FPPS is available if you prefer that.',
     open: false,
   },
   {
-    q: 'Is there a minimum hashrate?',
-    a: 'Yes',
+    q: 'Do I need a patched Bitcoin Core?',
+    a: 'No. As of Bitcoin Core v30, the official node supports SV2 template providing. A pruned node is fine.',
     open: false,
   },
 ];

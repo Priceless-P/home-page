@@ -24,8 +24,7 @@ export default function Hero() {
         <div className="flex flex-1 flex-col gap-6 xl:items-end">
           <p className="w-full text-base text-body-alt xl:w-[483px] xl:text-right">
             Mine with a pool without giving the pool control of your block. Your Bitcoin node
-            builds the template; DMND validates declared job, accounts for shares, and pays you
-            for pooled mining.
+            builds the template; DMND validates declared job, accounts for shares, and pays you.
           </p>
           <div className="flex flex-wrap items-center gap-2 xl:justify-end">
             <Button variant="primary" size="default" href={LINKS.startMining} label="Start mining" />

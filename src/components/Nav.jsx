@@ -9,9 +9,10 @@ import { cx } from '../lib/cx.js';
 import { LINKS } from '../config/links.js';
 
 const LINK_ITEMS = [
-  { label: 'Home', href: LINKS.home, current: true },
-  { label: 'Slice', href: LINKS.slice, current: false },
-  { label: 'Blog', href: LINKS.blog, current: false },
+  { id: 'home', label: 'Home', href: LINKS.home },
+  { id: 'slice', label: 'Slice', href: LINKS.slice },
+  { id: 'api', label: 'API Docs', href: LINKS.apiDocs },
+  { id: 'blog', label: 'Blog', href: LINKS.blog },
 ];
 
 const THEME_COLOR = { light: '#ffffff', dark: '#050505' };
@@ -88,7 +89,7 @@ function ThemeToggle({ label, onToggle }) {
   );
 }
 
-export default function Nav() {
+export default function Nav({ current = 'home' }) {
   const { toggle, label } = useTheme();
   const [open, setOpen] = useState(false);
   const menuRef = useRef(null);
@@ -172,10 +173,10 @@ export default function Nav() {
                 variant="tertiary"
                 size="default"
                 href={l.href}
-                link={l.current}
-                dim={!l.current}
+                link={l.id === current}
+                dim={l.id !== current}
                 label={l.label}
-                aria-current={l.current ? 'page' : undefined}
+                aria-current={l.id === current ? 'page' : undefined}
               />
             ))}
           </div>
@@ -233,11 +234,11 @@ export default function Nav() {
               <li key={l.label}>
                 <a
                   href={l.href}
-                  aria-current={l.current ? 'page' : undefined}
+                  aria-current={l.id === current ? 'page' : undefined}
                   onClick={() => setOpen(false)}
                   className={cx(
                     'font-heading text-3xl font-medium transition-opacity hover:opacity-80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500',
-                    l.current ? 'text-header-default' : 'text-body-alt',
+                    l.id === current ? 'text-header-default' : 'text-body-alt',
                   )}
                 >
                   {l.label}

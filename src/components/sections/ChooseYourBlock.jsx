@@ -21,10 +21,7 @@ export default function ChooseYourBlock() {
               <p className="w-full max-w-[518px] text-base text-body-alt">
                 The most profitable block is the one you build.
                 <br />
-                Every pool leaves fees on the table. Every pool quietly keeps the merge-mining
-                rewards. On DMND, you build the block — so every satoshi it earns is yours. Your
-                current machines work here. Standard SV1 firmware connects through DMND&#39;s
-                translation layer, with no firmware changes required.
+                Job Declaration lets your own Bitcoin node build the blocks your miners work on, instead of the pool building them. You decide what goes in each block and the pool still handles your payouts as always.
               </p>
             </div>
             <Button variant="primary" size="default" href={LINKS.runNode} label="Run your own node" />

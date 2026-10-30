@@ -1,11 +1,11 @@
 const CELLS = [
-  { value: 'Choose your transactions', label: 'Build the mempool selection you want. No more accepting whatever the pool decides to include.' },
+  { value: 'Choose your transactions', label: 'Build the transaction selection you want. No more accepting whatever the pool decides to include.' },
   {
-    value: 'Keep the fees',
-    label: 'The coinbase is yours, not the pool\'s. Fees other pools leave on the table go straight to you.',
+    value: 'Censorship resistance',
+    label: 'Nobody filters your block. The pool gets your hashrate, not a veto over what\'s in it. No blocklist, no silent exclusions, no jurisdiction deciding your template.',
   },
-  { value: 'Signal your BIPs', label: 'Your hashpower votes on the soft-forks that shape Bitcoin\'s future fee markets. Not the pool. Not by default.' },
-  { value: 'Merge-mine for rBTC', label: 'Same hashpower, rBTC on top. Because you build the block, the Rootstock merge-mining rewards land at your address — not the pool\'s.' },
+  { value: 'Signal your BIPs', label: 'Your hashpower votes on the soft-forks that shape Bitcoin\'s future fee markets.' },
+  { value: 'Merge-mine for rBTC', label: 'Same hashpower, rBTC on top. Because you build the block, the Rootstock merge-mining rewards goes directly to you.' },
 ];
 
 const VALUE_TYPE =
