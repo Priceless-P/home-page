@@ -16,7 +16,7 @@ export const LINKS = {
   startMining: 'https://dashboard.dmnd.work',
   signIn: 'https://dashboard.dmnd.work',
   blogIndex: `${BLOG_HOST}/`,
-  trustCenter: 'https://www.dmnd.work/trust-center/index.html',
+  trustCenter: '/trust-center',
   transparency: 'https://transparency.dmnd.work',
 
   brokerSignup: 'https://dashboard.dmnd.work/broker',
@@ -34,6 +34,6 @@ export const LINKS = {
   sliceDeepDive: '/slice',
   sliceExplainer: `${BLOG_HOST}/understanding-slice-pplns-jd/`,
   sliceWhitepaper: 'https://www.dmnd.work/pplns-with-job-declaration/pplns-with-job-declaration.pdf',
-  terms: 'https://dmnd.work/termsofservice.html',
-  privacy: 'https://dmnd.work/privacypolicy.html',
+  terms: '/termsofservice',
+  privacy: '/privacypolicy',
 };
